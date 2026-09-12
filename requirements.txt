@@ -1,0 +1,11 @@
+# 切换python环境
+conda activate langchain1.2
+
+# 安装ChatOpenAI依赖包
+pip install langchain-openai
+
+# 安装ChatDeepSeek 依赖包
+pip install langchain-deepseek
+
+# 用于环境管理的包
+pip install python-dotenv

@@ -1,0 +1,73 @@
+# ===================================
+# 1. 环境变量与敏感信息 (最重要！)
+# ===================================
+.env
+.env.local
+.env.*.local
+# 如果你后续需要给团队提供环境变量模板，可以解除下面这行的注释
+# !.env.example
+
+# ===================================
+# 2. Python 相关
+# ===================================
+# 字节码与缓存
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 打包与分发
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 虚拟环境
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ===================================
+# 3. IDE 配置 (针对截图中的 .idea 文件夹)
+# ===================================
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ===================================
+# 4. LangChain / AI 相关本地数据
+# ===================================
+# 本地向量数据库（如 Chroma, FAISS 等产生的文件）
+chroma/
+chromadb/
+faiss_index/
+*.sqlite3
+*.db
+.langchain/
+
+# ===================================
+# 5. 日志与系统文件
+# ===================================
+# 日志文件
+*.log
+logs/
+
+# 操作系统生成的文件
+.DS_Store
+Thumbs.db
