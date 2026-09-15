@@ -6,11 +6,10 @@ from langchain_ollama import ChatOllama
 # 假设 init_chat_model 是从 langchain 导入的，这是常见用法
 from langchain.chat_models import init_chat_model
 
-# 加载环境变量
-load_dotenv(override=True)
+# 加载环境变量（本地不需要加载环境变量）
+# load_dotenv(override=True)
 
-CLOSEAI_API_KEY = os.getenv("CLOSEAI_API_KEY")
-CLOSEAI_BASE_URL = os.getenv("CLOSEAI_BASE_URL")
+# 密钥和地址
 
 model = ChatOllama(
     model="qwen2.5:3b",

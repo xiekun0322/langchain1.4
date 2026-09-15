@@ -4,11 +4,10 @@ import asyncio
 from dotenv import load_dotenv
 from langchain_ollama import ChatOllama
 
-# 加载环境变量
-load_dotenv(override=True)
+# 加载环境变量（本地不需要加载环境变量）
+# load_dotenv(override=True)
 
-CLOSEAI_API_KEY = os.getenv("CLOSEAI_API_KEY")
-CLOSEAI_BASE_URL = os.getenv("CLOSEAI_BASE_URL")
+# 密钥和地址
 
 model = ChatOllama(
     model="qwen2.5:3b",
